@@ -1,0 +1,32 @@
+{
+  "name": "aggregateserver",
+  "version": "0.0.0",
+  "private": true,
+  "license": "ISC",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "config": "^3.0.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "pug": "2.0.0-beta11",
+    "qoe-lib": "file:../QoELib"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "grunt": "^1.0.3",
+    "grunt-license-report": "0.0.8",
+    "prettier": "^1.15.3"
+  }
+}

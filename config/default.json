@@ -1,0 +1,23 @@
+{
+  "dummy": false,
+  "server": {
+    "address": "127.0.0.1",
+    "port": 5889
+  },
+  "db": {
+    "type": "mongodb",
+    "url": "mongodb://localhost:27017",
+    "name": "sodium",
+    "limit": {
+      "default": 20,
+      "max": 100
+    },
+    "sodium_collection": "sodium_collection",
+    "stats_collection": "stats_collection",
+    "erasure_collection": "erasure_collection"
+  },
+  "file": {
+    "city": "../location_data/GeoIP2-City.mmdb",
+    "ISP": "../location_data/GeoIP2-ISP.mmdb"
+  }
+}
