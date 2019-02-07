@@ -19,6 +19,7 @@ const statsCountryRouter = require('./routes/stats_country');
 const statsSubdivisionRouter = require('./routes/stats_subdivision');
 const statsISPRouter = require('./routes/stats_isp');
 const statsInfoRouter = require('./routes/stats_info');
+const statsActiveRouter = require('./routes/stats_active');
 const ctrlErasureRouter = require('./routes/ctrl_erasure');
 
 const app = express();
@@ -57,6 +58,7 @@ app.use('/stats/country', statsCountryRouter);
 app.use('/stats/subdivision', statsSubdivisionRouter);
 app.use('/stats/isp', statsISPRouter);
 app.use('/stats/info', statsInfoRouter);
+app.use('/stats/active', statsActiveRouter);
 app.use('/ctrl/erasure', ctrlErasureRouter);
 
 // catch 404 and forward to error handler

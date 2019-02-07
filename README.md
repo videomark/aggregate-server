@@ -605,3 +605,24 @@ AggregateServerは、サービス、地域(国、都道府県)、ISPごとに時
     -   エラーケース
         -   mongoDBが停止しているなどの理由で動作不能の状態に陥っている場合、500 Internal Server Error を返します。
         -   引数が配列ではない、もしくは、session, videoのエントリが見つからない場合、400 Bad Request を返します。
+
+## アクティブセッション
+
+現在計測中、QoE計算中のセッションの数を取得する API です。
+
+-   GET /stats/active
+
+-   引数
+
+    -   なし
+
+-   戻り値
+
+        {
+            "active": 計測中のセッション数
+            "calculating": 計算中のセッション数
+        }
+
+    -   エラーケース
+        -   mongoDBが停止しているなどの理由で動作不能の状態に陥っている場合、500 Internal Server Error を返します。
+
