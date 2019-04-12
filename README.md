@@ -4,14 +4,14 @@ AggregateServerは、サービス、地域(国、都道府県)、ISPごとに時
 
 # 集計カテゴリ
 
--   サービス  
+-   サービス
     TVer, Paravi, YouTube など
 -   地域
-    -   国  
+    -   国
         'JP' などの2文字のアルファベット
-    -   都道府県  
+    -   都道府県
         13(東京) などのコード
--   ISP  
+-   ISP
     'Internet Initiative Japan'などのサービス名
 -   時間
     -   日  日付
@@ -60,7 +60,7 @@ AggregateServerは、サービス、地域(国、都道府県)、ISPごとに時
         "url": "mongodb://localhost:27017",         <- DBのURL
         "name": "sodium"                            <- DB名(現在はsodium固定)
         "limit": {                                  <- 検索数の上限
-          "default": 20,                            
+          "default": 20,
           "max": 100
         },
         "stats_collection": "stats_collection"      <- ステータス用のコレクション名
@@ -91,8 +91,8 @@ AggregateServerは、サービス、地域(国、都道府県)、ISPごとに時
           "limit"   : 整数値
           "sort"    : オブジェクト
         }
-        
-    -   group 
+
+    -   group
 
         "hour" | "service" | "country" | "subdivision" | "isp" | 省略
 
@@ -104,12 +104,12 @@ AggregateServerは、サービス、地域(国、都道府県)、ISPごとに時
         対象とする国コード (jp)など
 
         groupに"subdivision"を指定したときの必須オプション
-        
+
     -   limit
 
         返す要素の上限。省略時は 20 で上限 100 になります。
 
-    -   sort 
+    -   sort
 
         ソートする要素の指定。要素をkeyにして　1 | -1　を指定する。
 
@@ -123,8 +123,8 @@ AggregateServerは、サービス、地域(国、都道府県)、ISPごとに時
         |-1|descending|
 
         - 例1
-          
-           { "count": 1 } 
+
+           { "count": 1 }
 
         - 例2
 
@@ -167,13 +167,13 @@ AggregateServerは、サービス、地域(国、都道府県)、ISPごとに時
           "group"     : 文字列
         }
 
-    -   service 
+    -   service
 
         "YouTube" | "Paravi" | "TVer" | 省略
 
         グループ化集計するサービス名の指定 (大文字小文字区別せず、省略可)
 
-    -   group 
+    -   group
 
         "hour" | "day" | 省略
 
@@ -189,7 +189,7 @@ AggregateServerは、サービス、地域(国、都道府県)、ISPごとに時
               count                     : 計測数
               max                       : 最大 QoE
               min                       : 最小 QoE
-              average                   : 平均 QoE 
+              average                   : 平均 QoE
               total                     : QoE 値の合計
             },
             ...]
@@ -243,11 +243,11 @@ AggregateServerは、サービス、地域(国、都道府県)、ISPごとに時
           "sort"      : 文字列
         }
 
-    -   country 
+    -   country
 
         グループ化集計する国コードの指定　"JP" など
 
-    -   group 
+    -   group
 
         "hour" | "day" | 省略
 
@@ -257,7 +257,7 @@ AggregateServerは、サービス、地域(国、都道府県)、ISPごとに時
 
         返す要素の上限。省略時は 20 で上限 100 になります。
 
-    -   sort 
+    -   sort
 
         ソートする要素の指定。要素をkeyにして　1 | -1　を指定する。
 
@@ -275,7 +275,7 @@ AggregateServerは、サービス、地域(国、都道府県)、ISPごとに時
 
         -   例1
 
-             { "count": 1 } 
+             { "count": 1 }
 
         -   例2
 
@@ -291,7 +291,7 @@ AggregateServerは、サービス、地域(国、都道府県)、ISPごとに時
               count                     : 計測数
               max                       : 最大 QoE
               min                       : 最小 QoE
-              average                   : 平均 QoE 
+              average                   : 平均 QoE
               total                     : QoE 値の合計
             },
             ...]
@@ -343,15 +343,15 @@ AggregateServerは、サービス、地域(国、都道府県)、ISPごとに時
           "sort"            : 文字列
         }
 
-    -   country 
+    -   country
 
         グループ化集計する国コードの指定　"JP" など
 
-    -   subdivision 
+    -   subdivision
 
         グループ化集計する地域コードの指定 "13"(東京) など
 
-    -   group 
+    -   group
 
         "hour" | "day" | 省略
 
@@ -361,7 +361,7 @@ AggregateServerは、サービス、地域(国、都道府県)、ISPごとに時
 
         返す要素の上限。省略時は 50 で上限 100 になります。
 
-    -   sort 
+    -   sort
 
         ソートする要素の指定。要素をkeyにして　1 | -1　を指定する。
 
@@ -379,7 +379,7 @@ AggregateServerは、サービス、地域(国、都道府県)、ISPごとに時
 
         -   例1
 
-             { "count": 1 } 
+             { "count": 1 }
 
         -   例2
 
@@ -396,7 +396,7 @@ AggregateServerは、サービス、地域(国、都道府県)、ISPごとに時
               count                     : 計測数
               max                       : 最大 QoE
               min                       : 最小 QoE
-              average                   : 平均 QoE 
+              average                   : 平均 QoE
               total                     : QoE 値の合計
             },
             ...]
@@ -451,11 +451,11 @@ AggregateServerは、サービス、地域(国、都道府県)、ISPごとに時
           "sort"      : 文字列
         }
 
-    -   isp 
+    -   isp
 
         グループ化集計するISP名の指定　"Softbank BB" など
 
-    -   group 
+    -   group
 
         "hour" | "day" | 省略
 
@@ -465,7 +465,7 @@ AggregateServerは、サービス、地域(国、都道府県)、ISPごとに時
 
         返す要素の上限。省略時は 20 で上限 100 になります。
 
-    -   sort 
+    -   sort
 
         ソートする要素の指定。要素をkeyにして　1 | -1　を指定する。
 
@@ -483,7 +483,7 @@ AggregateServerは、サービス、地域(国、都道府県)、ISPごとに時
 
         -   例1
 
-             { "count": 1 } 
+             { "count": 1 }
 
         -   例2
 
@@ -499,7 +499,7 @@ AggregateServerは、サービス、地域(国、都道府県)、ISPごとに時
               count                     : 計測数
               max                       : 最大 QoE
               min                       : 最小 QoE
-              average                   : 平均 QoE 
+              average                   : 平均 QoE
               total                     : QoE 値の合計
             },
             ...]
@@ -550,23 +550,24 @@ AggregateServerは、サービス、地域(国、都道府県)、ISPごとに時
           "video"     : 文字列
         }
 
-    -   session 
+    -   session
 
         視聴時のセッションID
 
-    -   video 
+    -   video
 
         視聴時のビデオID
 
 -   戻り値
 
         [{
-          "session"       : 視聴時のセッションID
-          "video"         : 視聴時のビデオID
-          "country"       : 国コード
-          "subdivision"   : 地域コード
-          "isp"           : ISP名
+          "session"       : (string) 視聴時のセッションID
+          "video"         : (string) 視聴時のビデオID
+          "country"       : (string) 国コード | "--"
+          "subdivision"   : (string) 地域コード | "0"
+          "isp"           : (string) ISP名 | "unknown"
         }]
+    - メンバーに推定結果を必ず含むオブジェクトの配列を返します。
 
     -   エラーケース
         -   データがない場合、空の配列を返します。
@@ -585,11 +586,11 @@ AggregateServerは、サービス、地域(国、都道府県)、ISPごとに時
           "video"     : 文字列
         },...]
 
-    -   session 
+    -   session
 
         視聴時のセッションID
 
-    -   video 
+    -   video
 
         視聴時のビデオID
 
