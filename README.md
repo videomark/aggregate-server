@@ -94,7 +94,7 @@ AggregateServerは、サービス、地域(国、都道府県)、ISPごとに時
 
     -   group
 
-        "hour" | "service" | "country" | "subdivision" | "isp" | 省略
+        "hour" | "day" | "service" | "country" | "subdivision" | "isp" | 省略
 
         指定したグループごとに分けて集計した結果を返します。省略時は、何の分類もしない全データの平均です。
         但し、service, isp による絞り込みは private API となります。
