@@ -119,8 +119,8 @@ const proc = async (req, res, next) => {
         }
     }
 
-    const { country, subdivision } = finder.location.find(e.remote_address);
-    const isp = finder.isp.find(e.remote_address);
+    const { country, subdivision } = await finder.location.find(e.remote_address);
+    const isp = await finder.isp.find(e.remote_address);
     if (country === undefined || subdivision === undefined || isp === undefined) {
         res.json([]).status(200);
         return;
