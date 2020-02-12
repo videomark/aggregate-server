@@ -40,7 +40,7 @@ if (config.get('dummy')) {
 }
 
 app.set('mongodb', mongodb);
-app.set('finer', finder);
+app.set('finder', finder);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
