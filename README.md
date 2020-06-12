@@ -38,7 +38,7 @@ AggregateServerは、サービス、地域(国、都道府県)、ISPごとに時
 # 動作確認環境
 
 -   OS: Ubuntu 16.04
--   Node: v8.12.0
+-   Node: v12.16.0
 
 # 構成
 
