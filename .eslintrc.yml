@@ -2,7 +2,7 @@ extends:
   - airbnb-base
   - prettier
 env:
-    node: true
+  node: true
 plugins:
   - prettier
 rules:
