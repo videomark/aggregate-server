@@ -7,26 +7,26 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "config": "^3.2.5",
-    "cookie-parser": "^1.4.4",
-    "debug": "^4.1.1",
-    "express": "^4.17.1",
-    "http-errors": "^1.7.3",
-    "morgan": "^1.9.1",
-    "pug": "^2.0.4",
+    "config": "^3.3.7",
+    "cookie-parser": "^1.4.6",
+    "debug": "^4.3.4",
+    "express": "^4.18.1",
+    "http-errors": "^2.0.0",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2",
     "qoe-lib": "file:../QoELib"
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-config-prettier": "^6.10.0",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-react": "^7.18.3",
-    "grunt": "^1.0.4",
+    "eslint": "^8.21.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.30.1",
+    "grunt": "^1.5.3",
     "grunt-license-report": "0.0.8",
-    "prettier": "^1.19.1"
+    "prettier": "^2.7.1"
   }
 }
